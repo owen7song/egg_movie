@@ -1,0 +1,64 @@
+{
+  "name": "egg_movie",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.13.0",
+    "egg-view-react-ssr": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@easy-team/easywebpack-cli": "^4.4.3",
+    "@easy-team/easywebpack-react": "^4.1.1",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^7.0.2",
+    "core-js": "^3.6.5",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "egg-webpack": "^4.5.3",
+    "egg-webpack-react": "^3.0.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "css-loader": "^3.6.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-oms",
+    "stop": "egg-scripts stop --title=egg-server-oms",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "build": "easy build prod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
